@@ -14,7 +14,6 @@ module.exports = {
 
   entry: {
     index: ['./src/js/index.js', './src/scss/index.scss'],
-    contact: ['./src/js/contact.js', './src/scss/contact.scss'],
   },
 
   output: {
@@ -67,11 +66,6 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
       chunks: ['index'],
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/contact.html',
-      filename: './contact.html',
-      chunks: ['contact'],
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
