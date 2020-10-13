@@ -12,5 +12,5 @@
 
 # Available commands
 - *npm run build* - compiles all code to the *dist* folder for a production purposes,
-- *npm start* - starts a server on *locahost:9000*.
-PORT for *locahost* is specified in *webpack.config.js* at line 12.
+- *npm start* - starts a server on *localhost:9000*. <br>
+PORT for *localhost* is specified in *webpack.config.js* at line 12.
