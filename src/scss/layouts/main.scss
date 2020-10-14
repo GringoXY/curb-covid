@@ -1,0 +1,13 @@
+@import "../variables";
+
+.l-main {
+  width: 100vw;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  @import "../components/bar-left";
+  @import "../components/bar-right";
+}
