@@ -31,8 +31,13 @@
         color: $yellow;
         border: 0.1em solid $yellow;
 
-        &::before {
+        &--yellow {
           background-color: $yellow;
+          color: $black;
+        }
+
+        &::before {
+          background-color: darken($yellow, $amount: 30%);
         }
 
         &:hover {
