@@ -3,6 +3,14 @@
 .l-header {
   position: sticky;
   top: 0;
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: $white;
-  @import "../components/top";
+
+  @import "../components/logo";
+  @import "../components/settings";
+  @import "../components/nav";
 }

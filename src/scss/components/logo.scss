@@ -1,0 +1,14 @@
+@import "../variables";
+
+.c-logo {
+  height: 80%;
+
+  &__link {
+    height: 10%;
+  }
+
+  &__svg {
+    display: block;
+    height: 100%;
+  }
+}

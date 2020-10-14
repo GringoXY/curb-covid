@@ -1,43 +1,12 @@
 @import "../variables";
 
-.c-top {
-  width: 100vw;
-  height: 12vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.c-nav {
+  font-size: 0.5em;
+  font-weight: bold;
+  width: 30%;
+  height: 100%;
 
-  &__logo {
-    text-decoration: none;
-    height: 80%;
-  }
-
-  &__svg {
-    display: block;
-    height: 100%;
-  }
-
-  &__btn {
-    outline: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0.5em;
-    font-size: 0.6em;
-
-    &--font-increase {
-      font-size: 0.75em;
-    }
-  }
-
-  &__nav {
-    font-size: 0.5em;
-    font-weight: bold;
-    width: 30%;
-    height: 100%;
-  }
-
-  &__links {
+  &__list {
     width: 100%;
     height: 100%;
     list-style: none;
