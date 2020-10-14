@@ -1,0 +1,11 @@
+@import "../variables";
+
+.l-article {
+  margin-top: 10vh;
+  padding: 2em 0;
+  width: 100vw;
+  background-color: darken($white, $amount: 3%);
+  font-size: 0.7em;
+
+  @import "../components/section";
+}
