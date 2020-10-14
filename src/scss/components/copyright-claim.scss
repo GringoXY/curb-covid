@@ -2,4 +2,12 @@
 
 .c-copyright-claim {
   font-size: 0.7em;
+
+  &__link {
+    color: $white;
+
+    &:hover {
+      color: darken($white, $amount: 30%);
+    }
+  }
 }
