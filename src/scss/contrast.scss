@@ -47,6 +47,10 @@
     }
   }
 
+  .l-article {
+    background-color: lighten($black, $amount: 3%);
+  }
+
   .l-footer {
     background-color: lighten($black, $amount: 5%);
     color: $yellow;
