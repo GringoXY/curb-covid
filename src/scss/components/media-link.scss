@@ -1,0 +1,11 @@
+@import "../variables";
+
+.c-media-link {
+  text-decoration: none;
+  color: $white;
+  padding: 0.5em;
+
+  &:hover {
+    color: darken($white, $amount: 30%);
+  }
+}

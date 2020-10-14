@@ -1,0 +1,10 @@
+@import "../variables";
+
+.c-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+  font-size: 0.7em;
+}
