@@ -5,8 +5,7 @@ const svgs = document.querySelectorAll(".c-bar-right__svg");
 const spread = (covidSvgs) => {
   const numberOfCovidSvgs = parseInt(covidSvgs.length, 10);
 
-  for (let i = 0; i <= numberOfCovidSvgs; ++i) {
-    const RANDOMINDEX = Math.floor(Math.random() * numberOfCovidSvgs) + 0;
+  for (let i = 0; i < numberOfCovidSvgs; ++i) {
     const RANDOMDURATION = (Math.random() * 0.5) + 0.9;
     const RANDOMYCORD = Math.floor(Math.random() * 100) - 100;
     const RANDOMXCORD = Math.floor(Math.random() * 100) - 100;
@@ -14,7 +13,7 @@ const spread = (covidSvgs) => {
     const RANDOMOPACITY = RANDOMSCALE;
 
     // randomized spread animation
-    const { style } = covidSvgs[RANDOMINDEX];
+    const { style } = covidSvgs[i];
     style.transitionDuration = `${RANDOMDURATION}s`;
     style.transitionDelay = `${RANDOMDURATION}s`;
     style.opacity = `${RANDOMOPACITY}`;
