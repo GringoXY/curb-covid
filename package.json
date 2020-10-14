@@ -1,6 +1,6 @@
 {
   "name": "curb-covid",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Displaying news about COVID-19, overrall information about SARS-CoV-2 & form which checks probability of you having a disease.",
   "main": "index.js",
   "scripts": {
