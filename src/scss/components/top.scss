@@ -1,0 +1,75 @@
+@import "../variables";
+
+.c-top {
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__logo {
+    text-decoration: none;
+    height: 80%;
+  }
+
+  &__svg {
+    display: block;
+    height: 100%;
+  }
+
+  &__btn {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.5em;
+    font-size: 0.6em;
+
+    &--font-increase {
+      font-size: 0.75em;
+    }
+  }
+
+  &__nav {
+    font-size: 0.5em;
+    font-weight: bold;
+    width: 30%;
+    height: 100%;
+  }
+
+  &__links {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $black;
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0.5em;
+      width: calc(100% - 1em);
+      height: 0.2em;
+      background-color: $blue;
+      transition: opacity 0.25s ease-out;
+      opacity: 0;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
