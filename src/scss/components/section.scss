@@ -1,0 +1,14 @@
+@import "../variables";
+
+.c-section {
+  width: clamp(300px, 45%, 40%);
+  margin: 3em auto;
+
+  .c-heading {
+    font-weight: 600;
+  }
+
+  .c-paragraph {
+    margin-top: 0.5em;
+  }
+}
