@@ -1,0 +1,67 @@
+@import "./variables";
+
+.contrast {
+  background-color: $black;
+  color: $yellow;
+
+  .l-header {
+    background-color: lighten($black, $amount: 5%);
+
+    .c-settings {
+      &__btn {
+        color: $yellow;
+      }
+    }
+
+    .c-nav {
+      &__link {
+        color: $yellow;
+
+        &::before {
+          background-color: $yellow;
+        }
+      }
+    }
+  }
+
+  .l-main {
+    .c-links {
+      &__link {
+        background-color: $black;
+        color: $yellow;
+        border: 0.1em solid $yellow;
+
+        &::before {
+          background-color: $yellow;
+        }
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .l-footer {
+    background-color: lighten($black, $amount: 5%);
+    color: $yellow;
+
+    .c-media-link {
+      color: $yellow;
+
+      &:hover {
+        color: darken($yellow, $amount: 30%);
+      }
+    }
+
+    .c-copyright-claim {
+      &__link {
+        color: $yellow;
+
+        &:hover {
+          color: darken($yellow, $amount: 30%);
+        }
+      }
+    }
+  }
+}
