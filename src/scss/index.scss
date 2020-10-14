@@ -1,6 +1,22 @@
 @import "./variables";
 
-body {
-  background-color: $red;
-  display: grid;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: $white;
+  color: $black;
+  font-size: calc(10px + 2vmin);
+}
+
+@import "./layouts/header";
