@@ -17,6 +17,10 @@
     .c-settings {
       &__btn {
         color: $yellow;
+
+        &:focus {
+          border: 0.1em dotted $yellow;
+        }
       }
     }
 
@@ -47,7 +51,12 @@
           background-color: darken($yellow, $amount: 30%);
         }
 
-        &:hover {
+        &:focus {
+          box-shadow: 0 0 0 0.2em $black, 0 0 0 0.4em $yellow;
+        }
+
+        &:hover,
+        &:focus {
           color: $black;
         }
       }
