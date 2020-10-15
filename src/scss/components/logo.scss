@@ -5,11 +5,20 @@
   font-family: "Poppins", tahoma, sans-serif;
 
   &__link {
-    height: 10%;
+    text-decoration: none;
+    color: $black;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 
   &__svg {
-    height: 80%;
+    height: 3em;
+    margin-right: 0.3em;
+  }
+
+  &__covid {
+    width: 0.75em;
   }
 
   &__text {
@@ -17,11 +26,14 @@
 
     &--big {
       fill: $green;
-      font-size: 1.5em;
+      font-size: 13rem;
     }
 
     &--small {
-      font-size: 0.5em;
+      font-size: 0.75em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }
