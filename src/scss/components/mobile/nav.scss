@@ -21,16 +21,32 @@
       width: 3em;
       height: 3em;
       cursor: pointer;
+
+      &:hover {
+        background-color: darken($white, $amount: 10%);
+        border-radius: 50%;
+      }
     }
 
     &__hamburger {
       position: absolute;
       top: 47.5%;
-      left: 12.5%;
-      width: 75%;
+      left: 20%;
+      width: 60%;
       height: 5%;
       background-color: $black;
       border-radius: 1em;
+
+      &.c-nav {
+        &__hamburger {
+          &--is-displayed {
+            &::before,
+            &::after {
+              transform: translateY(0);
+            }
+          }
+        }
+      }
 
       &::before,
       &::after {
