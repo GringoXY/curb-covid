@@ -9,10 +9,10 @@ const spread = (covidSvgs) => {
     const RANDOMDURATION = (Math.random() * 0.5) + 0.9;
     const RANDOMYCORD = Math.floor(Math.random() * 100) - 100;
     const RANDOMXCORD = Math.floor(Math.random() * 100) - 100;
-    const RANDOMSCALE = (Math.random() * 0.3) + 0.1;
+    const RANDOMSCALE = (Math.random() * 0.4) + 0.1;
     const RANDOMOPACITY = RANDOMSCALE;
 
-    // randomized spread animation
+    // randomized spread animation on each element
     const { style } = covidSvgs[i];
     style.transitionDuration = `${RANDOMDURATION}s`;
     style.transitionDelay = `${RANDOMDURATION}s`;
