@@ -27,6 +27,10 @@
       padding: 1em 1.5em;
       position: relative;
 
+      &:focus {
+        outline: none;
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -43,6 +47,10 @@
         background-color: $blue;
         color: $white;
 
+        &:focus {
+          box-shadow: 0 0 0 0.2em $white, 0 0 0 0.4em darken($blue, $amount: 20%);
+        }
+
         &::before {
           background-color: darken($blue, $amount: 20%);
         }
@@ -53,12 +61,17 @@
         background-color: $white;
         border: 0.1em solid $black;
 
+        &:focus {
+          box-shadow: 0 0 0 0.2em $white, 0 0 0 0.4em $black;
+        }
+
         &::before {
           background-color: darken($white, $amount: 20%);
         }
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         &::before {
           opacity: 1;
         }

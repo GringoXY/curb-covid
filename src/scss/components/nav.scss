@@ -35,7 +35,12 @@
       opacity: 0;
     }
 
-    &:hover {
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,
+    &:focus {
       &::before {
         opacity: 1;
       }
