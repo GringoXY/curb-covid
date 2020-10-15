@@ -4,6 +4,13 @@ const navList = document.querySelector(".c-nav__list");
 const { style } = navList;
 let isClicked = false;
 
+window.onresize = () => {
+  const windowWidth = parseInt(window.innerWidth, 10);
+  if (windowWidth > 768) {
+    style.transform = "translateX(0)";
+  }
+};
+
 btnHamburger.addEventListener("click", () => {
   isClicked = !isClicked;
 
