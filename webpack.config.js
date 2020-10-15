@@ -60,9 +60,14 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)/,
-        use: [
-          'file-loader',
-        ],
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[hash].[ext]',
+            outputPath: 'fonts',
+            publicPath: 'fonts',
+          },
+        },
       },
     ],
   },
