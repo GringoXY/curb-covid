@@ -8,4 +8,9 @@
   &:hover {
     color: darken($white, $amount: 30%);
   }
+
+  &__svg {
+    width: 1em;
+    height: 1em;
+  }
 }
