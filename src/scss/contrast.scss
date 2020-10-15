@@ -7,6 +7,12 @@
   .l-header {
     background-color: lighten($black, $amount: 5%);
 
+    .c-logo {
+      &__text {
+        fill: $yellow;
+      }
+    }
+
     .c-settings {
       &__btn {
         color: $yellow;
