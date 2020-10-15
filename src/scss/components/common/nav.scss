@@ -6,50 +6,6 @@
   width: 30%;
   height: 100%;
 
-  &__btn {
-    $margin-from-corner: calc(6vh - 1.5em);
-    outline: none;
-    border: none;
-    background: none;
-    position: fixed;
-    z-index: 2;
-    top: $margin-from-corner;
-    right: $margin-from-corner;
-    width: 3em;
-    height: 3em;
-    display: none;
-    cursor: pointer;
-  }
-
-  &__hamburger {
-    position: absolute;
-    top: 47.5%;
-    left: 12.5%;
-    width: 75%;
-    height: 5%;
-    background-color: $black;
-    border-radius: 1em;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: $black;
-      border-radius: 1em;
-    }
-
-    &::before {
-      bottom: -400%;
-    }
-
-    &::after {
-      top: -400%;
-    }
-  }
-
   &__list {
     width: 100%;
     height: 100%;
