@@ -1,5 +1,28 @@
+@import "../../variables";
+
 @media (max-width: 1376px) {
   .c-nav {
     width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-nav {
+    &__btn {
+      display: block;
+    }
+
+    &__list {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      font-size: 2em;
+      justify-content: space-evenly;
+      flex-direction: column;
+      background-color: darken($white, $amount: 10%);
+      transform: translateX(100%);
+    }
   }
 }
