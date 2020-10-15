@@ -23,20 +23,18 @@
       text-decoration: none;
       color: $black;
       cursor: pointer;
-      border-radius: 0.5em;
+      border-radius: 0.5rem;
       padding: 1em 1.5em;
       position: relative;
-      z-index: 0;
 
       &::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        border-radius: 0.5em;
+        border-radius: 0.5rem;
         width: 100%;
         height: 100%;
-        z-index: -1;
         opacity: 0;
         transition: opacity 0.15s ease-out;
       }
@@ -73,7 +71,7 @@
 
     &__text,
     &__svg {
-      z-index: 0;
+      position: relative;
     }
   }
 }
