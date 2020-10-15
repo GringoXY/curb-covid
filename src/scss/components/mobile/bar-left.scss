@@ -1,0 +1,29 @@
+@media (max-width: 1376px) {
+  .c-bar-left {
+    width: 80%;
+    text-align: center;
+
+    .c-headings {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .c-bar-left {
+    justify-content: space-between;
+
+    .c-links {
+      &__link {
+        display: block;
+        width: 55%;
+        margin: 0 auto;
+
+        &--blue {
+          margin-bottom: 0.5em;
+        }
+      }
+    }
+  }
+}
