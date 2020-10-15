@@ -1,9 +1,11 @@
 @import "../variables";
+@import "../animations/spread";
 
 .c-bar-right {
   width: 40%;
   height: 80vh;
   position: relative;
+  animation: spread 1.5s ease-in-out 0.3s;
 
   &__svg {
     position: absolute;
