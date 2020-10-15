@@ -17,6 +17,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    &--fill-window {
+      display: none;
+    }
   }
 
   &__link {
