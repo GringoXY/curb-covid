@@ -11,7 +11,7 @@
   align-items: center;
   background-color: $white;
 
-  @import "../components/logo";
-  @import "../components/settings";
-  @import "../components/nav";
+  @import "../components/common/logo";
+  @import "../components/common/settings";
+  @import "../components/common/nav";
 }

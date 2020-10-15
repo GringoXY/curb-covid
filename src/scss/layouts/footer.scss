@@ -10,7 +10,7 @@
   flex-direction: column;
   padding: 0.5em 0;
 
-  @import "../components/media-link";
-  @import "../components/author";
-  @import "../components/copyright-claim";
+  @import "../components/common/media-link";
+  @import "../components/common/author";
+  @import "../components/common/copyright-claim";
 }
