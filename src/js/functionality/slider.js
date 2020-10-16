@@ -64,7 +64,6 @@ allFields.forEach(field => {
       clickable = true;
       // Remove all CSS animation classes on old displayed
       const displayedFieldIndex = allFields.indexOf(displayed);
-      console.log(displayedFieldIndex);
       displayed.className = displayedFieldIndex === 10
         ? "c-test__field c-test__result"
         : "c-test__field";
