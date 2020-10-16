@@ -1,0 +1,133 @@
+@import "../../variables";
+@import "../../animations/slideInLeft";
+@import "../../animations/slideInRight";
+
+.c-test {
+  position: relative;
+  max-width: 40%;
+  width: 35%;
+  height: 70vh;
+  border-radius: 0.5rem;
+  border: 0.05em solid darken($white, $amount: 20%);
+  background-color: $white;
+  overflow: hidden;
+
+  &__field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+
+    &.c-test {
+      &__field {
+        background-color: $white;
+        &--is-displayed {
+          z-index: 2;
+        }
+
+        &--is-slided-in-left {
+          animation-name: slideInLeft;
+          z-index: 2;
+        }
+
+        &--is-slided-in-right {
+          animation-name: slideInRight;
+          z-index: 2;
+        }
+
+        &--is-slided-out-left {
+          transform: translateX(-100%);
+        }
+
+        &--is-slided-out-right {
+          transform: translateX(100%);
+        }
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 1rem;
+    z-index: 3;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.55em;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    cursor: pointer;
+
+    &:disabled {
+      display: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 0.5rem;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.15s ease-out;
+    }
+
+    &--back {
+      left: 1rem;
+      padding-left: 1.5em;
+
+      &::before {
+        content: "<";
+        margin-right: 0.5em;
+      }
+    }
+
+    &--next {
+      right: 1rem;
+    }
+
+    &--white {
+      border: 0.1em solid $black;
+      background-color: $white;
+
+      &:focus {
+        box-shadow: 0 0 0 0.2em $white, 0 0 0 0.4em $black;
+      }
+
+      &::after {
+        background-color: darken($white, $amount: 20%);
+      }
+    }
+
+    &--blue {
+      background-color: $blue;
+      color: $white;
+
+      &:focus {
+        box-shadow: 0 0 0 0.2em $white, 0 0 0 0.4em darken($blue, $amount: 20%);
+      }
+
+      &::after {
+        background-color: darken($blue, $amount: 20%);
+      }
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
