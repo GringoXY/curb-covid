@@ -8,12 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Przemysław Sipa & Przemysław Kowalski">
   <meta name="description" content="Take a test which checks probability of you having a disease/COVID-19 infection.">
-  <title>Curb Covid - test your health</title>
+  <title>Curb Covid | COVID-19 risk assesment - test your health</title>
   <link rel="shortcut icon" href="<%= require('./assets/images/favicon.ico') %>" type="image/x-icon">
 </head>
 
 <body>
-
   <header class="l-header">
     <div class="c-logo">
       <a class="c-logo__link" href="./index.html" title="Go to the home page">
@@ -126,6 +125,207 @@
       </ul>
     </nav>
   </header>
+  <main class="l-main">
+    <form class="c-test" action="health-test.html" method="POST">
+      <fieldset class="c-test__field">
+        <h2 class="c-test__heading">COVID-19 risk assestment</h2>
+        <h5 class="c-test__heading">Test your health</h5>
+        <div class="c-test__claim">
+          <img class="c-test__svg" src="<%= require('./assets/images/info.svg') %>" type="image/svg+xml" alt="INFO:">
+          <div class="c-test__description">
+            <p class="c-test__paragraph">
+              Risk assessment tool was developed in accordance with <b>WHO</b> guidance. Please note that
+              results are provided for informational purposes only. They are not a substitute for a medical diagnosis or
+              doctor's consultation.
+            </p>
+            <p class="c-test__paragraph">
+              In order to use the tool you do not need to provide any personal data.
+            </p>
+            <p class="c-test__paragraph">
+              In case of emergency, do not rely on the tool and call ambulance instead.
+            </p>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="c-test__field">
+        <h3 class="c-test__heading">Your metric</h3>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__gender" required>
+          <img class="c-test__svg" src="<%= require('./assets/images/male.svg') %>" type="image/svg+xml" alt="MALE">
+          <span class="c-test__text">Male</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__gender" required>
+          <img class="c-test__svg" src="<%= require('./assets/images/female.svg') %>" type="image/svg+xml" alt="FEMALE">
+          <span class="c-test__text">Female</span>
+        </label>
+      </fieldset>
+      <fieldset class="c-test__field">
+        <h3 class="c-test__heading">How old are you?</h3>
+        <label class="c-test__label">
+          <span class="c-test__text">Age</span>
+          <input class="c-test__input-range" type="range" name="c-test__age" min="1" max="115" value="30" required>
+          <button class="c-test__btn c-test__btn--age-decrease" type="button" title="Decrease age by 1">-</button>
+          <button class="c-test__btn c-test__btn--age-increase" type="button" title="Increase age by 1">+</button>
+        </label>
+      </fieldset>
+      <fieldset class="c-test__field">
+        <h3 class="c-test__heading">Please select all statements that apply to you</h3>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__cancer">
+          <span class="c-test__text">Active cancer</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__immune-system">
+          <span class="c-test__text">Diseases or drugs that weaken immune system</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__obesity">
+          <span class="c-test__text">Obesity</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__statement">
+          <span class="c-test__text">Long-term stay at a care facility or nursing home</span>
+        </label>
+      </fieldset>
+      <fieldset class="c-test__field">
+        <h3 class="c-test__heading">Please select all statements that apply to you</h3>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__Diabetes">
+          <span class="c-test__text">Diabetes</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__Cardiovascular">
+          <span class="c-test__text">Cardiovascular disease</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__lung">
+          <span class="c-test__text">History of chronic lung disease</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__liver">
+          <span class="c-test__text">History of chronic liver disease</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__kidney">
+          <span class="c-test__text">History of chronic kidney disease</span>
+        </label>
+      </fieldset>
+      <fieldset class="c-test__field">
+        <h3 class="c-test__heading">Do you have fever?</h3>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__fever" required>
+          <span class="c-test__text">I don't have fever</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__fever" required>
+          <span class="c-test__text">Between 37.5°C and 38°C (99.5°F and 100.4°F)</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__fever" required>
+          <span class="c-test__text">Between 38°C and 40°C (100.4°F and 104°F)</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__fever" required>
+          <span class="c-test__text">Over 40°C (104°F)</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__fever" required>
+          <span class="c-test__text">I haven’t taken my temperature</span>
+        </label>
+      </fieldset>
+      <fieldset class="c-test__field">
+        <h3 class="c-test__heading">Do you have cough?</h3>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__cough" required>
+          <span class="c-test__text">Yes</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__cough" required>
+          <span class="c-test__text">No</span>
+        </label>
+      </fieldset>
+      <fieldset class="c-test__field">
+        <h3 class="c-test__heading">Do you have shortness of breath?</h3>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__breath" required>
+          <span class="c-test__text">Yes</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__breath" required>
+          <span class="c-test__text">No</span>
+        </label>
+      </fieldset>
+      <fiedlset class="c-test__field">
+        <h3 class="c-test__heading">Do you have any of the following symptoms?</h3>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__fatigue">
+          <span class="c-test__text">Fatigue</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__muscle-pain">
+          <span class="c-test__text">Muscle pain</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__chills">
+          <span class="c-test__text">Chills</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__headache">
+          <span class="c-test__text">Headache</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__diarrhea">
+          <span class="c-test__text">Diarrhea</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__nausea">
+          <span class="c-test__text">Nausea</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__sore-throat">
+          <span class="c-test__text">Sore throat</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-checkbox" type="checkbox" name="c-test__impairedness">
+          <span class="c-test__text">Impaired taste or smell</span>
+        </label>
+      </fiedlset>
+      <fieldset class="c-test__field">
+        <h3 class="c-test__heading">Have you had close contact with a person with confirmed or probable COVID-19 in the
+          past 14 days?</h3>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__contact" required>
+          <span class="c-test__text">I have provided direct care to such a person, without the use of a protective mask
+            and gloves</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__contact" required>
+          <span class="c-test__text">I had direct physical contact with such a person</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__contact" required>
+          <span class="c-test__text">I had face-to-face contact with such a person within 1 meter (3 feet) for longer
+            than 15 minutes</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__contact" required>
+          <span class="c-test__text">Other type of contact</span>
+        </label>
+        <label class="c-test__label">
+          <input class="c-test__input-radio" type="radio" name="c-test__contact" required>
+          <span class="c-test__text">None of the above</span>
+        </label>
+      </fieldset>
+      <fieldset class="c-test__field c-test__result">
+        <h3 class="c-test__heading c-test__judgement"></h3>
+        <p class="c-test__details"></p>
+      </fieldset>
+      <button class="c-test__btn c-test__btn--back c-test__btn--white" type="button"
+        title="Previous field">Back</button>
+      <button class="c-test__btn c-test__btn--next c-test__btn--blue" type="button" title="Next field">Next</button>
+    </form>
+  </main>
   <footer class="l-footer">
     <a class="c-media-link" href="https://github.com/GringoXY/curb-covid" target="_blank"
       title="Link to webapp repository">
