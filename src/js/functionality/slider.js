@@ -29,7 +29,6 @@ function changeField(forward) {
     if (forward) {
       newDisplayed = allFields[(displayedFieldIndex + 1) % allFields.length];
       newDisplayedFieldIndex = parseInt(displayedFieldIndex + 1, 10);
-      console.log(newDisplayedFieldIndex);
       displayed.classList.add('c-test__field--is-slided-out-left');
       newDisplayed.classList.add('c-test__field--is-slided-in-right', 'c-test__field--is-displayed');
     } else {
@@ -38,7 +37,6 @@ function changeField(forward) {
         (displayedFieldIndex - 1 + allFields.length) % allFields.length
         ];
       newDisplayedFieldIndex = parseInt(displayedFieldIndex - 1, 10);
-      console.log(newDisplayedFieldIndex);
       displayed.classList.add('c-test__field--is-slided-out-right');
       newDisplayed.classList.add('c-test__field--is-slided-in-left', 'c-test__field--is-displayed');
     }
