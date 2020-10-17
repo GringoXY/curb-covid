@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Przemysław Sipa & Przemysław Kowalski">
-  <meta name="description" content="Take a test which checks probability of you having a COVID-19 disease.">
+  <meta name="description" content="Take a test which checks probability oyou having a COVID-19 disease.">
   <title>Curb Covid | COVID-19 risk assesment - test your health</title>
   <link rel="shortcut icon" href="<%= require('./assets/images/favicon.ico') %>" type="image/x-icon">
 </head>
@@ -189,122 +189,122 @@
       <fieldset class="c-test__field">
         <h3 class="c-test__heading">Please select all statements that apply to you</h3>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__cancer">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="-1" name="c-test__cancer">
           <span class="c-test__text c-test__text--box">Active cancer</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__immune-system">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="1" name="c-test__immune-system">
           <span class="c-test__text c-test__text--box">Diseases or drugs that weaken immune system</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__obesity">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="-1" name="c-test__obesity">
           <span class="c-test__text c-test__text--box">Obesity</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__statement">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="1" name="c-test__statement">
           <span class="c-test__text c-test__text--box">Long-term stay at a care facility or nursing home</span>
         </label>
       </fieldset>
       <fieldset class="c-test__field">
         <h3 class="c-test__heading">Please select all statements that apply to you</h3>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__Diabetes">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="-1" name="c-test__Diabetes">
           <span class="c-test__text c-test__text--box">Diabetes</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__Cardiovascular">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="-1" name="c-test__Cardiovascular">
           <span class="c-test__text c-test__text--box">Cardiovascular disease</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__lung">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="2" name="c-test__lung">
           <span class="c-test__text c-test__text--box">History of chronic lung disease</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__liver">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="-1" name="c-test__liver">
           <span class="c-test__text c-test__text--box">History of chronic liver disease</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__kidney">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="-1" name="c-test__kidney">
           <span class="c-test__text c-test__text--box">History of chronic kidney disease</span>
         </label>
       </fieldset>
       <fieldset class="c-test__field">
         <h3 class="c-test__heading">Do you have fever?</h3>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__fever" required>
+          <input class="c-test__input-radio" type="radio" data-probability="1" name="c-test__fever" required>
           <span class="c-test__text c-test__text--circle">I don't have fever</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__fever" required>
+          <input class="c-test__input-radio" type="radio" data-probability="1" name="c-test__fever" required>
           <span class="c-test__text c-test__text--circle">Between 37.5°C and 38°C (99.5°F and 100.4°F)</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__fever" required>
+          <input class="c-test__input-radio" type="radio" data-probability="2" name="c-test__fever" required>
           <span class="c-test__text c-test__text--circle">Between 38°C and 40°C (100.4°F and 104°F)</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__fever" required>
+          <input class="c-test__input-radio" type="radio" data-probability="3" name="c-test__fever" required>
           <span class="c-test__text c-test__text--circle">Over 40°C (104°F)</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__fever" required>
+          <input class="c-test__input-radio" type="radio" data-probability="1" name="c-test__fever" required>
           <span class="c-test__text c-test__text--circle">I haven’t taken my temperature</span>
         </label>
       </fieldset>
       <fieldset class="c-test__field">
         <h3 class="c-test__heading">Do you have cough?</h3>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__cough" required>
+          <input class="c-test__input-radio" type="radio" data-probability="1" name="c-test__cough" required>
           <span class="c-test__text c-test__text--circle">Yes</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__cough" required>
+          <input class="c-test__input-radio" type="radio" data-probability="-1" name="c-test__cough" required>
           <span class="c-test__text c-test__text--circle">No</span>
         </label>
       </fieldset>
       <fieldset class="c-test__field">
         <h3 class="c-test__heading">Do you have shortness of breath?</h3>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__breath" required>
+          <input class="c-test__input-radio" type="radio" data-probability="1" name="c-test__breath" required>
           <span class="c-test__text c-test__text--circle">Yes</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__breath" required>
+          <input class="c-test__input-radio" type="radio" data-probability="-1" name="c-test__breath" required>
           <span class="c-test__text c-test__text--circle">No</span>
         </label>
       </fieldset>
       <fieldset class="c-test__field">
         <h3 class="c-test__heading">Do you have any of the following symptoms?</h3>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__fatigue">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="1" name="c-test__fatigue">
           <span class="c-test__text c-test__text--box">Fatigue</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__muscle-pain">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="1" name="c-test__muscle-pain">
           <span class="c-test__text c-test__text--box">Muscle pain</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__chills">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="1" name="c-test__chills">
           <span class="c-test__text c-test__text--box">Chills</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__headache">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="1" name="c-test__headache">
           <span class="c-test__text c-test__text--box">Headache</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__diarrhea">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="-1" name="c-test__diarrhea">
           <span class="c-test__text c-test__text--box">Diarrhea</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__nausea">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="-1" name="c-test__nausea">
           <span class="c-test__text c-test__text--box">Nausea</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__sore-throat">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="2" name="c-test__sore-throat">
           <span class="c-test__text c-test__text--box">Sore throat</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-checkbox" type="checkbox" name="c-test__impairedness">
+          <input class="c-test__input-checkbox" type="checkbox" data-probability="3" name="c-test__impairedness">
           <span class="c-test__text c-test__text--box">Impaired taste or smell</span>
         </label>
       </fieldset>
@@ -312,27 +312,27 @@
         <h3 class="c-test__heading">Have you had close contact with a person with confirmed or probable COVID-19 in the
           past 14 days?</h3>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__contact" required>
+          <input class="c-test__input-radio" type="radio" data-probability="4" name="c-test__contact" required>
           <span class="c-test__text c-test__text--circle">I have provided direct care to such a person, without the use
             of a protective mask
             and gloves</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__contact" required>
+          <input class="c-test__input-radio" type="radio" data-probability="3" name="c-test__contact" required>
           <span class="c-test__text c-test__text--circle">I had direct physical contact with such a person</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__contact" required>
+          <input class="c-test__input-radio" type="radio" data-probability="2" name="c-test__contact" required>
           <span class="c-test__text c-test__text--circle">I had face-to-face contact with such a person within 1 meter
             (3 feet) for longer
             than 15 minutes</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__contact" required>
+          <input class="c-test__input-radio" type="radio" data-probability="1" name="c-test__contact" required>
           <span class="c-test__text c-test__text--circle">Other type of contact</span>
         </label>
         <label class="c-test__label">
-          <input class="c-test__input-radio" type="radio" name="c-test__contact" required>
+          <input class="c-test__input-radio" type="radio" data-probability="-1" name="c-test__contact" required>
           <span class="c-test__text c-test__text--circle">None of the above</span>
         </label>
       </fieldset>
