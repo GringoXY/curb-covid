@@ -4,9 +4,9 @@
 
 .c-test {
   position: relative;
-  max-width: 40%;
-  width: 35%;
-  height: 70vh;
+  max-width: 30%;
+  width: 25%;
+  height: 60vh;
   border-radius: 0.5rem;
   border: 0.05em solid darken($white, $amount: 20%);
   background-color: $white;
@@ -19,7 +19,11 @@
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 0.5rem 0.5rem 0 0;
+    border-radius: 0.5rem;
+    padding: 1em 1.5em;
+    font-size: 0.65em;
+    display: flex;
+    flex-direction: column;
 
     &.c-test {
       &__field {
@@ -29,12 +33,12 @@
         }
 
         &--is-slided-in-left {
-          animation-name: slideInLeft;
+          animation: slideInLeft ease-out;
           z-index: 2;
         }
 
         &--is-slided-in-right {
-          animation-name: slideInRight;
+          animation: slideInRight ease-out;
           z-index: 2;
         }
 
@@ -49,6 +53,87 @@
     }
   }
 
+  &__label {
+    position: relative;
+    cursor: pointer;
+    padding: 0.5em 0;
+    margin: 0.25em 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1em solid darken($white, $amount: 10%);
+  }
+
+  &__input-radio,
+  &__input-checkbox {
+    &:checked {
+      & ~ .c-test {
+        &__text {
+          &--circle,
+          &--box {
+            &::before {
+              background-color: $blue;
+            }
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__text {
+    margin-left: 0.75em;
+    font-size: 0.8em;
+
+    &--circle,
+    &--box {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 1rem;
+        height: 1rem;
+        transform: translateY(-50%);
+      }
+
+      &::before {
+        background-color: $black;
+      }
+
+      &::after {
+        width: 0.5rem;
+        height: 0.5rem;
+        left: 0.25rem;
+        background-color: $white;
+        opacity: 0;
+        transition: opacity 0.15s linear;
+      }
+    }
+
+    &--circle {
+      &::before,
+      &::after {
+        border-radius: 50px;
+      }
+    }
+
+    &--box {
+      &::before,
+      &::after {
+        border-radius: 0.1rem;
+      }
+    }
+  }
+
+  &__age {
+    margin: 0 0.75em 0 0;
+    width: 3em;
+    font-size: 0.8em;
+  }
+
   &__btn {
     position: absolute;
     bottom: 1rem;
@@ -58,7 +143,6 @@
     border: none;
     border-radius: 0.5rem;
     font-size: 0.55em;
-    text-transform: uppercase;
     padding: 1em 2em;
     cursor: pointer;
 
@@ -98,16 +182,7 @@
     }
 
     &--white {
-      border: 0.1em solid $black;
-      background-color: $white;
-
-      &:focus {
-        box-shadow: 0 0 0 0.2em $white, 0 0 0 0.4em $black;
-      }
-
-      &::after {
-        background-color: darken($white, $amount: 20%);
-      }
+      color: $black;
     }
 
     &--blue {
@@ -127,6 +202,63 @@
     &:focus {
       &::after {
         opacity: 1;
+      }
+    }
+  }
+
+  &__svg {
+    height: 3em;
+    fill: $blue;
+
+    &--sex {
+      height: 1em;
+      margin: 0 0.5em 0 1em;
+      fill: $black;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 0.5rem;
+  }
+
+  &__claim {
+    display: flex;
+  }
+
+  &__paragraph {
+    padding: 1em;
+    text-align: justify;
+    font-size: 0.8em;
+  }
+
+  &__input-range {
+    width: 60%;
+    cursor: pointer;
+  }
+
+  &__setting {
+    margin: 0 0.5em;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    background-color: darken($white, $amount: 10%);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 0.8em;
+    cursor: pointer;
+
+    &--age-decrease {
+      margin-left: 1em;
+
+      &:hover {
+        background-color: lighten($red, $amount: 10%);
+      }
+    }
+
+    &--age-increase {
+      &:hover {
+        background-color: lighten($green, $amount: 10%);
       }
     }
   }
