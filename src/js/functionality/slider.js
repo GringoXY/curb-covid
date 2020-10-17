@@ -37,12 +37,17 @@ function changeField(forward) {
       case 10:
         forwardButton.disabled = true;
         break;
+      case 9:
+        forwardButton.textContent = "Result";
+        forwardButton.disabled = false;
+        break;
       case 0:
         backButton.disabled = true;
         break;
       default:
         forwardButton.disabled = false;
         backButton.disabled = false;
+        forwardButton.textContent = "Next";
         break;
     }
   }
