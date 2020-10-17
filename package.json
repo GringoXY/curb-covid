@@ -9,8 +9,8 @@
   },
   "browserslist": [
     "last 2 versions",
-    "> 0.2%",
-    "ie 10"
+    "> 0.1%",
+    "ie 9"
   ],
   "repository": {
     "type": "git",
