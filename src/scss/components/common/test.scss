@@ -9,6 +9,7 @@
   height: 60vh;
   border-radius: 0.5rem;
   border: 0.05em solid darken($white, $amount: 20%);
+  margin-bottom: 1em;
   overflow: hidden;
 
   &__field {
@@ -204,7 +205,7 @@
   }
 
   &__svg {
-    height: 3em;
+    height: 3rem;
     fill: $blue;
 
     &--sex {
