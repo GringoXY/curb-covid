@@ -61,6 +61,78 @@
         }
       }
     }
+
+    .c-test {
+      border-color: lighten($black, $amount: 30%);
+
+      &__field {
+        background-color: lighten($black, $amount: 10%);
+      }
+
+      &__svg {
+        fill: $yellow;
+      }
+
+      &__label {
+        border-color: lighten($black, $amount: 30%);
+      }
+
+      &__text {
+        &--circle,
+        &--box {
+          &::before {
+            background-color: lighten($black, $amount: 50%);
+          }
+
+          &::after {
+            background-color: $black;
+          }
+        }
+      }
+
+      &__input-radio,
+      &__input-checkbox {
+        &:checked {
+          & ~ .c-test {
+            &__text {
+              &--circle,
+              &--box {
+                &::before {
+                  background-color: $yellow;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &__setting {
+        background-color: $yellow;
+
+        &:hover {
+          background-color: darken($yellow, $amount: 20%);
+        }
+      }
+
+      &__btn {
+        &--transparent {
+          color: $yellow;
+        }
+
+        &--yellow {
+          background-color: $yellow;
+          color: $black;
+
+          &:focus {
+            box-shadow: 0 0 0 0.2em lighten($black, $amount: 10%), 0 0 0 0.4em darken($yellow, $amount: 20%);
+          }
+
+          &::after {
+            background-color: darken($yellow, $amount: 20%);
+          }
+        }
+      }
+    }
   }
 
   .l-article {
