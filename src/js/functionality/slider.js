@@ -1,13 +1,4 @@
-const SLIDETIME = 500; //ms
 
-const backButton = document.querySelector(".c-test__btn--back");
-backButton.disabled = true;
-const forwardButton = document.querySelector(".c-test__btn--next");
-// Select all fields and convert node to array for easy handling
-const allFields = [...document.querySelectorAll(".c-test__field")];
-let clickable = true;
-let displayed = null;
-let newDisplayed = null;
 
 function initSlider() {
   // Set the CSS transition on the fields to the value we specified in SLIDETIME above
@@ -56,6 +47,17 @@ function changeField(forward) {
     }
   }
 }
+
+const SLIDETIME = 500; //ms
+
+const backButton = document.querySelector(".c-test__btn--back");
+backButton.disabled = true;
+const forwardButton = document.querySelector(".c-test__btn--next");
+// Select all fields and convert node to array for easy handling
+const allFields = [...document.querySelectorAll(".c-test__field")];
+let clickable = true;
+let displayed = null;
+let newDisplayed = null;
 
 allFields.forEach(field => {
   field.addEventListener("transitionend", e => {
