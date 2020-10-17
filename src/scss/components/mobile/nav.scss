@@ -8,6 +8,8 @@
 
 @media (max-width: 768px) {
   .c-nav {
+    z-index: 1;
+
     &__btn {
       $margin-from-corner: calc(6vh - 1.5em);
       display: block;
@@ -15,7 +17,7 @@
       border: none;
       background: none;
       position: fixed;
-      z-index: 2;
+      z-index: 3;
       top: $margin-from-corner;
       right: $margin-from-corner;
       width: 3em;
@@ -78,6 +80,7 @@
         right: 0;
         width: 100vw;
         height: 100vh;
+        z-index: 2;
         font-size: 2em;
         display: flex;
         justify-content: space-evenly;
