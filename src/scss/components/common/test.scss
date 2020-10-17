@@ -4,8 +4,8 @@
 
 .c-test {
   position: relative;
-  max-width: 30%;
-  width: 25%;
+  z-index: 0;
+  width: 30%;
   height: 60vh;
   border-radius: 0.5rem;
   border: 0.05em solid darken($white, $amount: 20%);
@@ -28,17 +28,15 @@
     &.c-test {
       &__field {
         &--is-displayed {
-          z-index: 2;
+          z-index: 1;
         }
 
         &--is-slided-in-left {
           animation: slideInLeft ease-out;
-          z-index: 2;
         }
 
         &--is-slided-in-right {
           animation: slideInRight ease-out;
-          z-index: 2;
         }
 
         &--is-slided-out-left {
