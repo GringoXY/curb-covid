@@ -1,6 +1,7 @@
 const SLIDETIME = 500; //ms
 
 const backButton = document.querySelector(".c-test__btn--back");
+backButton.disabled = true;
 const forwardButton = document.querySelector(".c-test__btn--next");
 // Select all fields and convert node to array for easy handling
 const allFields = [...document.querySelectorAll(".c-test__field")];
