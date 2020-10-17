@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronavirus in Poland</title>
+    <link rel="stylesheet" href="corona_poland.css">
+    <link rel="stylesheet" type="text/css" href="./chart/Chart.min.css">
+
+    
+</head>
+<body>
+    <section class="loading">
+        Page is loading
+        <h1> Please wait! It takes some time because page uses huge amount of data</h1>
+        <h3> dac jakis funfuct ze używamy kilkanascie tyseic linijek kodu danycy do analizy tych wyrkesow</h3>
+    </section>
+    <main id="main">
+        <section class="charts">
+    
+        <article class="charts__infected">
+            <h2>Total infected in Poland:</h2>
+            <p id="infected"></p>
+    
+        </article>
+        <article class="charts__deceased">
+            <h2>Total deceased in Poland:</h2>
+            <p id="deceased"></p>
+        </article>
+        <article class="charts__time">
+             <span>From</span> <span id="for_two_weeks"></span> <span>to</span> <span id="data"></span> 
+           </article>
+    
+    <div class="charts_api" width="30%" height="30%">
+        <canvas id="chart1" ></canvas>
+    </div>
+    <div class="charts_api">
+        <canvas id="chart2" ></canvas>
+    </div>
+    <div class="charts_api">
+        <canvas id="chart3" ></canvas>
+    </div>
+    
+    </section>
+    <section class="search" id="search">
+        <iframe name="frame"></iframe>
+    
+    
+    <form  target="frame">
+        <label for="s">Select from a list:  
+            <select name="s" id="s">  
+                <option value="1"> dolnośląskie</option>
+                <option value="2"> kujawsko-pomorskie</option>
+                <option value="3"> lubelskie</option>
+                <option value="4"> lubuskie</option>
+                <option value="5">łódzkie</option>
+                <option value="6">małopolskie</option>
+                <option value="7">mazowieckie</option>
+                <option value="8">opolskie</option>
+                <option value="9">podkarpackie</option>
+                <option value="10">podlaskie</option>
+                <option value="11">pomorskie</option>
+                <option value="12">śląskie</option>
+                <option value="13">świętokrzyskie</option>
+                <option value="14">warmińsko-mazurskie</option>
+                <option value="15">wielkopolskie</option>
+                <option value="16">zachodniopomorskie</option>
+            </select> 
+        </label>
+        <input type="button"  onclick="value_from_select()" value="Search">
+    </form>
+    </section>
+    <section class="reset">
+        <button  onclick="window.location.reload();" href="index.html#search" > Find out about other voievodeships!</button>
+    </section>
+    <div class="charts_api">
+        <canvas id="chart4"></canvas>
+    </div>
+    
+    </main>
+<script  src="./chart/Chart.min.js"></script>
+<script  src="./chart/Chart.js"></script>
+<script src="./api_corona_poland.js"></script>
+
+
+</body>
+</html>
