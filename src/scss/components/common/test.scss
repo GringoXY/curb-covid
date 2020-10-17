@@ -24,10 +24,10 @@
     font-size: 0.65em;
     display: flex;
     flex-direction: column;
+    background-color: $white;
 
     &.c-test {
       &__field {
-        background-color: $white;
         &--is-displayed {
           z-index: 2;
         }
@@ -181,7 +181,7 @@
       right: 1rem;
     }
 
-    &--white {
+    &--transparent {
       color: $black;
     }
 
