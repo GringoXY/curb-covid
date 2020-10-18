@@ -50,6 +50,25 @@
     }
   }
 
+  &__result {
+    align-items: center;
+    padding: 2em;
+
+    &--orange {
+      background-color: $orange;
+      color: $white;
+    }
+
+    &--white {
+      background-color: $white;
+    }
+
+    &--green {
+      background-color: darken($green, $amount: 30%);
+      color: $white;
+    }
+  }
+
   &__label {
     position: relative;
     cursor: pointer;
@@ -178,7 +197,8 @@
       right: 1rem;
     }
 
-    &--transparent {
+    &--white {
+      background-color: $white;
       color: $black;
     }
 
@@ -218,14 +238,29 @@
     margin-bottom: 0.5rem;
   }
 
+  &__judgement {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 1.5em;
+  }
+
   &__claim {
     display: flex;
   }
 
-  &__paragraph {
+  &__paragraph,
+  &__details {
     padding: 1em;
     text-align: justify;
     font-size: 0.8em;
+  }
+
+  &__list {
+    margin: 1em 0 0 1em;
+  }
+
+  &__details {
+    margin-top: 1em;
   }
 
   &__input-range {
