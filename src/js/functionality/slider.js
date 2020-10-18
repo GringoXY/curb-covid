@@ -1,5 +1,3 @@
-
-
 function initSlider() {
   // Set the CSS transition on the fields to the value we specified in SLIDETIME above
   allFields.forEach(field =>
