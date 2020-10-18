@@ -5,4 +5,4 @@ import './functionality/contrast-mode';
 import './functionality/hamburger';
 import './functionality/slider';
 import './functionality/range-slider';
-import './functionality/test-result';
+import './functionality/test-result-calculator';
