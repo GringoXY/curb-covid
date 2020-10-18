@@ -1,6 +1,6 @@
 {
   "name": "curb-covid",
-  "version": "0.6.19",
+  "version": "0.7.0",
   "description": "Displaying global map of COVID-19 disease, news about COVID-19, overrall information about SARS-CoV-2 & form which checks probability of you having a disease.",
   "main": "index.js",
   "scripts": {
