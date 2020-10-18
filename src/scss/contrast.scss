@@ -69,6 +69,15 @@
         background-color: lighten($black, $amount: 10%);
       }
 
+      &__result {
+        &--orange,
+        &--green,
+        &--white {
+          color: $black;
+          background-color: $yellow;
+        }
+      }
+
       &__svg {
         fill: $yellow;
       }
@@ -115,8 +124,9 @@
       }
 
       &__btn {
-        &--transparent {
+        &--white {
           color: $yellow;
+          background-color: lighten($black, $amount: 10%);
         }
 
         &--yellow {
