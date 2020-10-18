@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=us.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#particles-js {
+  height: 100%;
+  background: #262626;
+}
+/*# sourceMappingURL=us.css.map */
