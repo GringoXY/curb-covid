@@ -1,0 +1,97 @@
+.c-bar-left {
+  width: 40%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-bar-left .c-headings {
+  font-size: 0.7em;
+}
+
+.c-bar-left .c-headings__heading {
+  margin: 0.5em 0;
+  font-weight: 600;
+}
+
+.c-bar-left .c-links {
+  font-size: 0.6em;
+}
+
+.c-bar-left .c-links__link {
+  text-decoration: none;
+  color: #131112;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 1em 1.5em;
+  position: relative;
+}
+
+.c-bar-left .c-links__link:focus {
+  outline: none;
+}
+
+.c-bar-left .c-links__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.c-bar-left .c-links__link--blue {
+  background-color: #3777ff;
+  color: #fdfdfd;
+}
+
+.c-bar-left .c-links__link--blue:focus {
+  -webkit-box-shadow: 0 0 0 0.2em #fdfdfd, 0 0 0 0.4em #0043d0;
+          box-shadow: 0 0 0 0.2em #fdfdfd, 0 0 0 0.4em #0043d0;
+}
+
+.c-bar-left .c-links__link--blue::before {
+  background-color: #0043d0;
+}
+
+.c-bar-left .c-links__link--white {
+  margin-left: 1em;
+  background-color: #fdfdfd;
+  border: 0.1em solid #131112;
+}
+
+.c-bar-left .c-links__link--white:focus {
+  -webkit-box-shadow: 0 0 0 0.2em #fdfdfd, 0 0 0 0.4em #131112;
+          box-shadow: 0 0 0 0.2em #fdfdfd, 0 0 0 0.4em #131112;
+}
+
+.c-bar-left .c-links__link--white::before {
+  background-color: #cacaca;
+}
+
+.c-bar-left .c-links__link:hover::before, .c-bar-left .c-links__link:focus::before {
+  opacity: 1;
+}
+
+.c-bar-left .c-links__svg {
+  margin-right: 0.25em;
+  margin-top: 0.25em;
+  width: 0.9em;
+  height: 0.9em;
+}
+
+.c-bar-left .c-links__text, .c-bar-left .c-links__svg {
+  position: relative;
+}
+/*# sourceMappingURL=bar-left.css.map */

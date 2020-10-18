@@ -1,0 +1,59 @@
+.c-nav {
+  font-size: 0.5em;
+  font-weight: 500;
+  width: 30%;
+  height: 100%;
+}
+
+.c-nav__btn {
+  display: none;
+}
+
+.c-nav__list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-nav__list--fill-window {
+  display: none;
+}
+
+.c-nav__link {
+  text-decoration: none;
+  color: #131112;
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+.c-nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.5em;
+  width: calc(100% - 1em);
+  height: 0.2em;
+  background-color: #3777ff;
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+  opacity: 0;
+}
+
+.c-nav__link:focus {
+  outline: none;
+}
+
+.c-nav__link:hover::before, .c-nav__link:focus::before {
+  opacity: 1;
+}
+/*# sourceMappingURL=nav.css.map */

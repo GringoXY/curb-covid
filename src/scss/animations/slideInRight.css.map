@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,YAAU;EACR,IAAI;IACF,SAAS,EAAE,gBAAgB;;EAE7B,EAAE;IACA,SAAS,EAAE,aAAa",
+    "sources": [
+        "slideInRight.scss"
+    ],
+    "names": [],
+    "file": "slideInRight.css"
+}

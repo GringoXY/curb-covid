@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,CAAC;EACR,SAAS,EAAE,KAAK;EAChB,gBAAgB,ECCV,OAAO;EDAb,KAAK,ECCC,OAAO;EDAb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,OAAO;CAKjB;;AAbD,AEAA,SFAS,CEAT,aAAa,CAAC;EACZ,eAAe,EAAE,IAAI;EACrB,KAAK,EDEC,OAAO;ECDb,OAAO,EAAE,KAAK;CAUf;;AFbD,AEKE,SFLO,CEAT,aAAa,AAKV,MAAM,CAAC;EACN,KAAK,EAAE,OAA4B;CACpC;;AFPH,AESE,SFTO,CESN,kBAAK,CAAC;EACL,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;CACZ;;AFZH,AIAA,SJAS,CIAT,SAAS,CAAC;EACR,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;EACtB,aAAa,EAAE,KAAK;EACpB,SAAS,EAAE,KAAK;CACjB;;AJPD,AMAA,SNAS,CMAT,kBAAkB,CAAC;EACjB,SAAS,EAAE,KAAK;CASjB;;ANVD,AMGE,SNHO,CMGN,wBAAM,CAAC;EACN,KAAK,ELAD,OAAO;CKKZ;;ANTH,AMMI,SNNK,CMGN,wBAAM,AAGJ,MAAM,CAAC;EACN,KAAK,EAAE,OAA4B;CACpC",
+    "sources": [
+        "footer.scss",
+        "../variables.scss",
+        "../components/common/media-link.scss",
+        "../variables.scss",
+        "../components/common/author.scss",
+        "../variables.scss",
+        "../components/common/copyright-claim.scss",
+        "../variables.scss"
+    ],
+    "names": [],
+    "file": "footer.css"
+}

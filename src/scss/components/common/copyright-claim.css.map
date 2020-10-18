@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,kBAAkB,CAAC;EACjB,SAAS,EAAE,KAAK;CASjB;;AAPE,AAAD,wBAAO,CAAC;EACN,KAAK,ECAD,OAAO;CDKZ;;AANA,AAGC,wBAHK,AAGJ,MAAM,CAAC;EACN,KAAK,EAAE,OAA4B;CACpC",
+    "sources": [
+        "copyright-claim.scss",
+        "../../variables.scss"
+    ],
+    "names": [],
+    "file": "copyright-claim.css"
+}

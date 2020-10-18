@@ -1,0 +1,27 @@
+@media (max-width: 1376px) {
+  .c-bar-left {
+    width: 80%;
+    text-align: center;
+  }
+  .c-bar-left .c-headings {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-bar-left {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .c-bar-left .c-links__link {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+  }
+  .c-bar-left .c-links__link--blue {
+    margin-bottom: 0.5em;
+  }
+}
+/*# sourceMappingURL=bar-left.css.map */

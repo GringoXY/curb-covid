@@ -1,0 +1,328 @@
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.c-test {
+  position: relative;
+  z-index: 0;
+  width: 30%;
+  height: 60vh;
+  border-radius: 0.5rem;
+  border: 0.05em solid #cacaca;
+  overflow: hidden;
+}
+
+.c-test__field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1em 1.5em;
+  font-size: 0.65em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fdfdfd;
+}
+
+.c-test__field.c-test__field--is-displayed {
+  z-index: 1;
+}
+
+.c-test__field.c-test__field--is-slided-in-left {
+  -webkit-animation: slideInLeft ease-out;
+          animation: slideInLeft ease-out;
+}
+
+.c-test__field.c-test__field--is-slided-in-right {
+  -webkit-animation: slideInRight ease-out;
+          animation: slideInRight ease-out;
+}
+
+.c-test__field.c-test__field--is-slided-out-left {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.c-test__field.c-test__field--is-slided-out-right {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.c-test__result {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+}
+
+.c-test__result--orange {
+  background-color: #f15c2b;
+  color: #fdfdfd;
+}
+
+.c-test__result--white {
+  background-color: #fdfdfd;
+}
+
+.c-test__result--green {
+  background-color: #194127;
+  color: #fdfdfd;
+}
+
+.c-test__label {
+  position: relative;
+  cursor: pointer;
+  padding: 0.5em 0;
+  margin: 0.25em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.1em solid #e4e4e4;
+}
+
+.c-test__input-radio:checked ~ .c-test__text--circle::before, .c-test__input-radio:checked ~ .c-test__text--box::before, .c-test__input-checkbox:checked ~ .c-test__text--circle::before, .c-test__input-checkbox:checked ~ .c-test__text--box::before {
+  background-color: #3777ff;
+}
+
+.c-test__input-radio:checked ~ .c-test__text--circle::after, .c-test__input-radio:checked ~ .c-test__text--box::after, .c-test__input-checkbox:checked ~ .c-test__text--circle::after, .c-test__input-checkbox:checked ~ .c-test__text--box::after {
+  opacity: 1;
+}
+
+.c-test__text {
+  margin-left: 0.75em;
+  font-size: 0.8em;
+}
+
+.c-test__text--circle::before, .c-test__text--circle::after, .c-test__text--box::before, .c-test__text--box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1rem;
+  height: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.c-test__text--circle::before, .c-test__text--box::before {
+  background-color: #131112;
+}
+
+.c-test__text--circle::after, .c-test__text--box::after {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0.25rem;
+  background-color: #fdfdfd;
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.c-test__text--circle::before, .c-test__text--circle::after {
+  border-radius: 50px;
+}
+
+.c-test__text--box::before, .c-test__text--box::after {
+  border-radius: 0.1rem;
+}
+
+.c-test__age {
+  margin: 0 0.75em 0 0;
+  width: 3em;
+  font-size: 0.8em;
+}
+
+.c-test__btn {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 3;
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.55em;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.c-test__btn:disabled {
+  display: none;
+}
+
+.c-test__btn:focus {
+  outline: none;
+}
+
+.c-test__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.c-test__btn--back {
+  left: 1rem;
+  padding-left: 1.5em;
+}
+
+.c-test__btn--back::before {
+  content: "<";
+  margin-right: 0.5em;
+}
+
+.c-test__btn--next {
+  right: 1rem;
+}
+
+.c-test__btn--white {
+  background-color: #fdfdfd;
+  color: #131112;
+}
+
+.c-test__btn--blue {
+  background-color: #3777ff;
+  color: #fdfdfd;
+}
+
+.c-test__btn--blue:focus {
+  -webkit-box-shadow: 0 0 0 0.2em #fdfdfd, 0 0 0 0.4em #0043d0;
+          box-shadow: 0 0 0 0.2em #fdfdfd, 0 0 0 0.4em #0043d0;
+}
+
+.c-test__btn--blue::after {
+  background-color: #0043d0;
+}
+
+.c-test__btn:hover::after, .c-test__btn:focus::after {
+  opacity: 1;
+}
+
+.c-test__svg {
+  height: 3rem;
+  fill: #3777ff;
+}
+
+.c-test__svg--sex {
+  height: 1em;
+  margin: 0 0.5em 0 1em;
+  fill: #131112;
+}
+
+.c-test__heading {
+  margin-bottom: 0.5rem;
+}
+
+.c-test__judgement {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+
+.c-test__claim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-test__paragraph, .c-test__details {
+  padding: 1em;
+  text-align: justify;
+  font-size: 0.8em;
+}
+
+.c-test__list {
+  margin: 1em 0 0 1em;
+}
+
+.c-test__details {
+  margin-top: 1em;
+}
+
+.c-test__input-range {
+  width: 60%;
+  cursor: pointer;
+}
+
+.c-test__setting {
+  margin: 0 0.5em;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  background-color: #e4e4e4;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.c-test__setting--age-decrease {
+  margin-left: 1em;
+}
+
+.c-test__setting--age-decrease:hover {
+  background-color: #f25366;
+}
+
+.c-test__setting--age-increase:hover {
+  background-color: #63c384;
+}
+/*# sourceMappingURL=test.css.map */

@@ -1,0 +1,15 @@
+.c-media-link {
+  text-decoration: none;
+  color: #fdfdfd;
+  padding: 0.5em;
+}
+
+.c-media-link:hover {
+  color: #b1b1b1;
+}
+
+.c-media-link__svg {
+  width: 1em;
+  height: 1em;
+}
+/*# sourceMappingURL=media-link.css.map */

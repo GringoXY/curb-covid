@@ -1,0 +1,14 @@
+.c-section {
+  max-width: 900px;
+  margin: 3em auto;
+  padding: 0 2em;
+}
+
+.c-section .c-heading {
+  font-weight: 600;
+}
+
+.c-section .c-paragraph {
+  margin-top: 0.5em;
+}
+/*# sourceMappingURL=section.css.map */

@@ -1,0 +1,65 @@
+.l-footer {
+  font-size: 0.8em;
+  background-color: #131112;
+  color: #fdfdfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5em 0;
+}
+
+.l-footer .c-media-link {
+  text-decoration: none;
+  color: #fdfdfd;
+  padding: 0.5em;
+}
+
+.l-footer .c-media-link:hover {
+  color: #b1b1b1;
+}
+
+.l-footer .c-media-link__svg {
+  width: 1em;
+  height: 1em;
+}
+
+.l-footer .c-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0.5em;
+  font-size: 0.7em;
+}
+
+.l-footer .c-copyright-claim {
+  font-size: 0.7em;
+}
+
+.l-footer .c-copyright-claim__link {
+  color: #fdfdfd;
+}
+
+.l-footer .c-copyright-claim__link:hover {
+  color: #b1b1b1;
+}
+/*# sourceMappingURL=footer.css.map */

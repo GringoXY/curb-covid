@@ -1,0 +1,22 @@
+.l-article {
+  margin-top: 10vh;
+  padding: 2em 0;
+  width: 100vw;
+  background-color: whitesmoke;
+  font-size: 0.7em;
+}
+
+.l-article .c-section {
+  max-width: 900px;
+  margin: 3em auto;
+  padding: 0 2em;
+}
+
+.l-article .c-section .c-heading {
+  font-weight: 600;
+}
+
+.l-article .c-section .c-paragraph {
+  margin-top: 0.5em;
+}
+/*# sourceMappingURL=article.css.map */

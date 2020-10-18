@@ -1,0 +1,22 @@
+.c-settings__btn {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 0.6em;
+}
+
+.c-settings__btn:focus {
+  border: 0.1em dotted #131112;
+}
+
+.c-settings__btn--font-increase {
+  font-size: 0.75em;
+}
+
+.c-settings__svg {
+  width: 1em;
+  height: 1em;
+}
+/*# sourceMappingURL=settings.css.map */

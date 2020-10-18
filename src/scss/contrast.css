@@ -1,0 +1,139 @@
+.contrast {
+  background-color: #131112;
+  color: #ffe156;
+}
+
+.contrast .l-header {
+  background-color: #201d1f;
+}
+
+.contrast .l-header .c-logo__text {
+  fill: #ffe156;
+  color: #ffe156;
+}
+
+.contrast .l-header .c-settings__btn {
+  color: #ffe156;
+}
+
+.contrast .l-header .c-settings__btn:focus {
+  border: 0.1em dotted #ffe156;
+}
+
+.contrast .l-header .c-nav__link {
+  color: #ffe156;
+}
+
+.contrast .l-header .c-nav__link::before {
+  background-color: #ffe156;
+}
+
+.contrast .l-main .c-links__link {
+  background-color: #131112;
+  color: #ffe156;
+  border: 0.1em solid #ffe156;
+}
+
+.contrast .l-main .c-links__link--yellow {
+  background-color: #ffe156;
+  color: #131112;
+}
+
+.contrast .l-main .c-links__link::before {
+  background-color: #bc9b00;
+}
+
+.contrast .l-main .c-links__link:focus {
+  -webkit-box-shadow: 0 0 0 0.2em #131112, 0 0 0 0.4em #ffe156;
+          box-shadow: 0 0 0 0.2em #131112, 0 0 0 0.4em #ffe156;
+}
+
+.contrast .l-main .c-links__link:hover, .contrast .l-main .c-links__link:focus {
+  color: #131112;
+}
+
+.contrast .l-main .c-test {
+  border-color: #64595f;
+}
+
+.contrast .l-main .c-test__field {
+  background-color: #2e292c;
+}
+
+.contrast .l-main .c-test__result--orange, .contrast .l-main .c-test__result--green, .contrast .l-main .c-test__result--white {
+  color: #131112;
+  background-color: #ffe156;
+}
+
+.contrast .l-main .c-test__svg {
+  fill: #ffe156;
+}
+
+.contrast .l-main .c-test__label {
+  border-color: #64595f;
+}
+
+.contrast .l-main .c-test__text--circle::before, .contrast .l-main .c-test__text--box::before {
+  background-color: #988b92;
+}
+
+.contrast .l-main .c-test__text--circle::after, .contrast .l-main .c-test__text--box::after {
+  background-color: #131112;
+}
+
+.contrast .l-main .c-test__input-radio:checked ~ .c-test__text--circle::before, .contrast .l-main .c-test__input-radio:checked ~ .c-test__text--box::before, .contrast .l-main .c-test__input-checkbox:checked ~ .c-test__text--circle::before, .contrast .l-main .c-test__input-checkbox:checked ~ .c-test__text--box::before {
+  background-color: #ffe156;
+}
+
+.contrast .l-main .c-test__setting {
+  background-color: #ffe156;
+}
+
+.contrast .l-main .c-test__setting:hover {
+  background-color: #efc500;
+}
+
+.contrast .l-main .c-test__btn--white {
+  color: #ffe156;
+  background-color: #2e292c;
+}
+
+.contrast .l-main .c-test__btn--yellow {
+  background-color: #ffe156;
+  color: #131112;
+}
+
+.contrast .l-main .c-test__btn--yellow:focus {
+  -webkit-box-shadow: 0 0 0 0.2em #2e292c, 0 0 0 0.4em #efc500;
+          box-shadow: 0 0 0 0.2em #2e292c, 0 0 0 0.4em #efc500;
+}
+
+.contrast .l-main .c-test__btn--yellow::after {
+  background-color: #efc500;
+}
+
+.contrast .l-article {
+  background-color: #1b181a;
+}
+
+.contrast .l-footer {
+  background-color: #201d1f;
+  color: #ffe156;
+}
+
+.contrast .l-footer .c-media-link {
+  color: #ffe156;
+}
+
+.contrast .l-footer .c-media-link:hover {
+  color: #bc9b00;
+}
+
+.contrast .l-footer .c-copyright-claim__link {
+  color: #ffe156;
+}
+
+.contrast .l-footer .c-copyright-claim__link:hover {
+  color: #bc9b00;
+}
+/*# sourceMappingURL=contrast.css.map */

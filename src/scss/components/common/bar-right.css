@@ -1,0 +1,108 @@
+@-webkit-keyframes spread {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10% {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  20% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  30% {
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
+  }
+  40% {
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
+  }
+  50% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  60% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  70% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  80% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes spread {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10% {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  20% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  30% {
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
+  }
+  40% {
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
+  }
+  50% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  60% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  70% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
+  80% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.c-bar-right {
+  width: 40%;
+  height: 80vh;
+  position: relative;
+  -webkit-animation: spread 1.5s ease-in-out 0.3s;
+          animation: spread 1.5s ease-in-out 0.3s;
+}
+
+.c-bar-right__svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15em;
+  height: 15em;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity linear, -webkit-transform ease-out;
+  transition: opacity linear, -webkit-transform ease-out;
+  transition: transform ease-out, opacity linear;
+  transition: transform ease-out, opacity linear, -webkit-transform ease-out;
+}
+/*# sourceMappingURL=bar-right.css.map */
