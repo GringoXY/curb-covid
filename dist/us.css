@@ -2,10 +2,28 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  color: white;
+  text-align: center;
 }
 
 #particles-js {
   height: 100%;
   background: #262626;
+}
+
+nav {
+  width: 98vw;
+  height: 15%;
+  color: white;
+  background: #262626;
+  border: 1px solid white;
+}
+
+footer {
+  width: 98vw;
+  height: 5%;
+  color: white;
+  background: #262626;
+  border: 1px solid white;
 }
 /*# sourceMappingURL=us.css.map */
