@@ -125,65 +125,69 @@
       </ul>
     </nav>
   </header>
-  <section class="loading">
-    Page is loading
-    <h1> Please wait! It takes some time because page uses huge amount of data</h1>
-    <h3> dac jakis funfuct ze używamy kilkanascie tyseic linijek kodu danycy do analizy tych wyrkesow</h3>
+  <section class="l-section loading">
+    <div class="c-loading__circle"></div>
+    <span class="c-loading__message">Loading data...</span>
   </section>
-  <main id="main">
-    <section class="charts">
-      <article class="charts__infected">
-        <h2>Total infected in Poland:</h2>
-        <p id="infected"></p>
+  <main class="l-main" id="main">
+    <div class="c-overview">
+      <article class="c-overview__infected charts__infected">
+        <h2 class="c-overview__heading">Total infected in Poland</h2>
+        <p class="c-overview__data c-overview__data--orange" id="infected"></p>
       </article>
-      <article class="charts__deceased">
-        <h2>Total deceased in Poland:</h2>
-        <p id="deceased"></p>
+      <article class="c-overview__deceased charts__deceased">
+        <h2 class="c-overview__heading">Total deceased in Poland</h2>
+        <p class="c-overview__data c-overview__data--black" id="deceased"></p>
       </article>
-      <article class="charts__time">
-        <span>From</span> <span id="for_two_weeks"></span> <span>to</span> <span id="data"></span>
+    </div>
+    <section class="c-charts charts">
+      <article class="c-charts__time charts__time">
+        <span class="c-charts__date">Data from</span>
+        <span class="c-charts__date" id="for_two_weeks"></span>
+        <span class="c-charts__date">to</span>
+        <span class="c-charts__date" id="data"></span>
       </article>
-      <div class="charts_api" width="30%" height="30%">
-        <canvas id="chart1"></canvas>
+      <div class="c-charts__chart charts_api">
+        <canvas class="c-charts__canvas c-charts__graph" id="chart1"></canvas>
       </div>
-      <div class="charts_api">
-        <canvas id="chart2"></canvas>
+      <div class="c-charts__chart charts_api">
+        <canvas class="c-charts__canvas c-charts__graph--extended" id="chart2"></canvas>
       </div>
-      <div class="charts_api">
-        <canvas id="chart3"></canvas>
+      <div class="c-charts__chart charts_api">
+        <canvas class="c-charts__canvas c-charts__graph--column" id="chart3"></canvas>
       </div>
     </section>
-    <section class="search" id="search">
-      <iframe name="frame"></iframe>
-      <form target="frame">
-        <label for="s">Select from a list:
-          <select name="s" id="s">
-            <option value="1">dolnośląskie</option>
-            <option value="2">kujawsko-pomorskie</option>
-            <option value="3">lubelskie</option>
-            <option value="4">lubuskie</option>
-            <option value="5">łódzkie</option>
-            <option value="6">małopolskie</option>
-            <option value="7">mazowieckie</option>
-            <option value="8">opolskie</option>
-            <option value="9">podkarpackie</option>
-            <option value="10">podlaskie</option>
-            <option value="11">pomorskie</option>
-            <option value="12">śląskie</option>
-            <option value="13">świętokrzyskie</option>
-            <option value="14">warmińsko-mazurskie</option>
-            <option value="15">wielkopolskie</option>
-            <option value="16">zachodniopomorskie</option>
+    <section class="c-search search" id="search">
+      <iframe class="c-search__iframe" name="frame"></iframe>
+      <form class="c-search__form" target="frame">
+        <label class="c-search__label" for="s">Select from a list:
+          <select class="c-search__select" name="s" id="s">
+            <option class="c-search__option" value="1">dolnośląskie</option>
+            <option class="c-search__option" value="2">kujawsko-pomorskie</option>
+            <option class="c-search__option" value="3">lubelskie</option>
+            <option class="c-search__option" value="4">lubuskie</option>
+            <option class="c-search__option" value="5">łódzkie</option>
+            <option class="c-search__option" value="6">małopolskie</option>
+            <option class="c-search__option" value="7">mazowieckie</option>
+            <option class="c-search__option" value="8">opolskie</option>
+            <option class="c-search__option" value="9">podkarpackie</option>
+            <option class="c-search__option" value="10">podlaskie</option>
+            <option class="c-search__option" value="11">pomorskie</option>
+            <option class="c-search__option" value="12">śląskie</option>
+            <option class="c-search__option" value="13">świętokrzyskie</option>
+            <option class="c-search__option" value="14">warmińsko-mazurskie</option>
+            <option class="c-search__option" value="15">wielkopolskie</option>
+            <option class="c-search__option" value="16">zachodniopomorskie</option>
           </select>
         </label>
-        <input type="button" onclick="value_from_select()" value="Search">
+        <button class="c-search__btn search-btn" type="button">Search</button>
       </form>
     </section>
-    <section class="reset">
-      <button onclick="window.location.reload();" href="index.html#search"> Find out about other voievodeships!</button>
-    </section>
-    <div class="charts_api">
-      <canvas id="chart4"></canvas>
+    <button class="c-search__btn c-search__btn--reset reset" onclick="window.location.reload();"
+      href="covid-poland.html#search"> Find out about other
+      voievodeships!</button>
+    <div class="c-charts__chart charts_api">
+      <canvas class="c-charts__canvas c-charts__graph--column" id="chart4"></canvas>
     </div>
   </main>
   <footer class="l-footer">
