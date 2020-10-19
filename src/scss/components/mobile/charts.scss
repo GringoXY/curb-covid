@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .c-charts {
+    padding: 0.5em 0;
+
+    &__chart {
+      width: calc(100vw - 1em);
+    }
+  }
+}

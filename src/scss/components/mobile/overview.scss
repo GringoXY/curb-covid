@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .c-overview {
+    flex-direction: column;
+
+    &__infected {
+      margin-bottom: 2em;
+    }
+  }
+}
