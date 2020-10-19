@@ -1,0 +1,44 @@
+@import "../../variables";
+@import "../../animations/loading-rotate";
+
+.c-loading {
+  &__circle {
+    position: relative;
+    display: block;
+    width: 7vw;
+    height: 7vw;
+    background-color: $black;
+    border-radius: 50%;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 54%;
+      height: 104%;
+      top: -2%;
+      animation: loading 1.25s ease-out infinite;
+    }
+
+    &::before {
+      background-color: lighten($black, $amount: 20%);
+      left: -2%;
+      border-radius: 200px 0 0 200px;
+      transform-origin: right;
+    }
+
+    &::after {
+      background-color: $blue;
+      right: -2%;
+      border-radius: 0 200px 200px 0;
+      transform-origin: left;
+    }
+  }
+
+  &__message {
+    margin-top: 1em;
+    font-size: 0.6em;
+    color: darken($white, $amount: 30%);
+  }
+}
