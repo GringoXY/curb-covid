@@ -1,0 +1,19 @@
+@import "../variables";
+
+.l-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+
+  @import "../components/common/loading";
+}
