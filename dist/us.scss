@@ -1,28 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito&display=swap');
+
 body {
     margin:0;
     padding:0;
     height:100vh;
     color:white;
     text-align:center;
+    font-family: 'Nunito', sans-serif;
+    background: #262626;
 
 }
 #particles-js {
     height:100%;
+    width:100%;
     background: #262626;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 }
 nav{
-    width:98vw;
-    height:15%;
+    width:100%;
+    height:10%;
     color:white;
-    background: #262626;
-    border:1px solid white;
+    background: #262640;
+  
     
 }
+
+h1  {
+    color:white;
+    z-index:1;
+    font-size:2em;
+    text-align:center;
+    margin-top:-100;
+    
+    
+    
+}
+h2 {
+    margin-top:-20;
+}
+section {
+   
+    height:90%;
+    width:100%;
+    position: relative;
+    box-sizing: border-box;
+}
+blockquote {
+    font-size:2em;
+    width:30%;
+    margin-top:17%;
+    position:absolute;
+    color:white;
+    span {
+        width:100%;
+        background:red;
+        display:block;
+        height:5px;
+        margin-top:20px;
+    }
+}
+img {
+    position: absolute;
+  }
+  
+  img:nth-of-type(1) {
+    width: 500px;
+    right: 40;
+    top: 20%;
+  }
+  img:nth-of-type(2) {
+    width: 500px;
+    left:40;
+    top: 15%;
+    margin-top: 15%;
+  }
+
+section:nth-child(odd) {
+    background: #262626;
+}
+.scrolling {
+height:150%;
+p#przemek1 {
+    font-size:1.5em;
+    display:block;
+    z-index:1;
+    position: absolute;
+    left:10%;
+    top: 65%;
+    margin-top: 15%;
+}
+p#m1 {
+    font-size:1.5em;
+    display:block;
+    z-index:1;
+    position: absolute;
+    right: 10%;
+    top: 70%;
+}
+}
+
+.percentage {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+
+.more_infos {
+    padding-top:-20%;
+   
+    height:80%;
+   
+    h3 {
+        overflow: hidden; 
+        letter-spacing: 15px;
+        font-size:3em;
+        font-family: 'Audiowide', cursive;
+        margin: 0 auto; 
+        letter-spacing: .15em;
+  white-space: nowrap; 
+    
+   
+    }
+}
+
+
+  
 footer{
-    width:98vw;
+    width:100%;
     height:5%;
     color:white;
-    background: #262626;
-    border:1px solid white;
-    
+    background: #262640;
+       
+        
 }
