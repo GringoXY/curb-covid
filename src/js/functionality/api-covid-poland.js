@@ -264,7 +264,9 @@ fetch("https://api.apify.com/v2/datasets/L3VCmhMeX0KUQeJto/items?format=json&cle
 
   .catch(error => console.log('error', error));
 var start_loop_wojewodztwo = false;
-function value_from_select() {
+
+const searchBtn = document.querySelector(".search-btn");
+searchBtn.addEventListener("click", () => {
   document.querySelector(".search").style.display = "none";
   document.querySelector(".reset").style.display = "block";
   array_selected_wojewodztwo = new Array();
@@ -402,4 +404,4 @@ function value_from_select() {
     });
     show_chart_wojewodztwo = true;
   }, 1000);
-}
+});
