@@ -250,6 +250,8 @@ var deceased_array_selected_wojewodztwo = new Array();
 var time_of_data_wojewodztwo = new Array();
 var show_chart_wojewodztwo = false;
 var fetched_yet = false;
+const main = document.querySelector(".l-main");
+main.style.display = "none";
 fetch("https://api.apify.com/v2/datasets/L3VCmhMeX0KUQeJto/items?format=json&clean=1", requestOptions)
   .then(response => response.text())
   .then(result => {
@@ -264,7 +266,6 @@ fetch("https://api.apify.com/v2/datasets/L3VCmhMeX0KUQeJto/items?format=json&cle
 
   .catch(error => console.log('error', error));
 var start_loop_wojewodztwo = false;
-
 const searchBtn = document.querySelector(".search-btn");
 searchBtn.addEventListener("click", () => {
   document.querySelector(".search").style.display = "none";
