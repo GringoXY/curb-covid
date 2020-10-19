@@ -1,4 +1,5 @@
 # curb-covid
+Aplikacja Curb-COVID służy do wstępnego wykrycia możliwości zarażenia się koronawirusem. Użytkownik wypełnia formularz na podsatwie którego jest wystawiona diagnoza. Ponadto aplikacja oferuje możliwość śledzenia na bieżąco ilości zakażeń czy śmierci z powodu wirusa.W postaci czytelnych wykresów przedstawione są dane odnośnie koronawirusa w Polsce. Uzytkownik może zobaczyć szczegółowe informacje o koronawirusie w swoim wojewodztwie. W aplikacji znajdziemy również światową mapę, która przedstawia ilość zakażeń i śmierci na wirusa dla poszczególnych krajów. 
 # Prerequisites
 - Node.js (^10.12.0, or >=12.0.0),
 - npm (^6.4.1, or >=6.9.0).
