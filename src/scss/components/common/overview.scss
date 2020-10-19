@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.c-overview {
+  display: flex;
+  width: 75vw;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10em auto;
+  text-align: center;
+
+  &__data {
+    font-size: 2em;
+
+    &--orange {
+      color: $orange;
+    }
+  }
+}
