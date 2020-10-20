@@ -262,14 +262,37 @@ fetch("https://api.apify.com/v2/datasets/L3VCmhMeX0KUQeJto/items?format=json&cle
     document.querySelector(".loading").style.display = "none";
     document.querySelector("#main").style.display = "block";
 
+    const isClicked = sessionStorage.getItem("isClicked");
+
+    if (isClicked === "true") {
+      const footer = document.querySelector(".l-footer");
+      const element = footer.getBoundingClientRect();
+      const yPosition = element.top;
+
+      // scroll to voievodeship
+      setTimeout(() => {
+        window.scrollTo(0, yPosition);
+      }, 250);
+    }
+
+    sessionStorage.setItem("isClicked", "false");
+
   })
 
   .catch(error => console.log('error', error));
 var start_loop_wojewodztwo = false;
 const searchBtn = document.querySelector(".search-btn");
+const resetBtn = document.querySelector(".reset");
+
+resetBtn.addEventListener("click", () => {
+  sessionStorage.setItem("isClicked", "true");
+  window.location.reload();
+});
+
 searchBtn.addEventListener("click", () => {
-  document.querySelector(".search").style.display = "none";
-  document.querySelector(".reset").style.display = "block";
+  const search = document.querySelector("#search");
+  search.style.display = "none";
+  resetBtn.style.display = "block";
   array_selected_wojewodztwo = new Array();
   infected_array_selected_wojewodztwo = new Array();
   deceased_array_selected_wojewodztwo = new Array();
