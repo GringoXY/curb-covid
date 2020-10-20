@@ -1,10 +1,11 @@
 const path = require('path');
+const json = require('json-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
 
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -75,12 +76,7 @@ module.exports = {
       },
       {
         test: /\.json$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[hash].[ext]',
-          },
-        },
+        loader: 'json-loader',
       },
     ],
   },
