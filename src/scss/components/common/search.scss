@@ -63,6 +63,7 @@
     }
 
     &--reset {
+      display: none;
       margin: 0 auto;
       background-color: $orange;
       color: $white;
