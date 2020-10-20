@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Przemysław Sipa & Przemysław Kowalski">
   <meta name="description" content="Check and analyze charts & graphs of infections/deceases in Poland">
-  <title>Curb Covid | COVID-19 charts & graphs of infections and diseases in Poland</title>
+  <title>Curb Covid | COVID-19 charts & graphs of infections and deceased in Poland</title>
   <link rel="shortcut icon" href="<%= require('./assets/images/favicon.ico') %>" type="image/x-icon">
 </head>
 
@@ -133,6 +133,9 @@
         <span class="c-charts__date" id="for_two_weeks"></span>
         <span class="c-charts__date">to</span>
         <span class="c-charts__date" id="data"></span>
+        <span class="c-charts__date">(date difference +/- 1 day)</span>
+        <p class="c-charts__info">Charts are interactive - click on them, you can choose what type of data you wanna see
+        </p>
       </article>
       <div class="c-charts__chart charts_api">
         <canvas class="c-charts__canvas c-charts__graph" id="chart1"></canvas>
