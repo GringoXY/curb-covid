@@ -2,6 +2,7 @@
   max-width: 900px;
   margin: 3em auto;
   padding: 0 2em;
+  text-align: justify;
 
   .c-heading {
     font-weight: 600;
@@ -9,5 +10,9 @@
 
   .c-paragraph {
     margin-top: 0.5em;
+  }
+
+  .c-guide-list {
+    padding-left: 1em;
   }
 }
