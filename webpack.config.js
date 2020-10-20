@@ -16,6 +16,7 @@ module.exports = {
     index: ['./src/js/index.js', './src/scss/index.scss'],
     'covid-test': ['./src/js/covid-test.js', './src/scss/covid-test.scss'],
     'covid-poland': ['./src/js/covid-poland.js', './src/scss/covid-poland.scss'],
+    'covid-world': ['./src/js/covid-world.js', './src/scss/covid-world.scss'],
   },
 
   output: {
@@ -89,6 +90,11 @@ module.exports = {
       template: './src/covid-poland.html',
       filename: './covid-poland.html',
       chunks: ['covid-poland'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/covid-world.html',
+      filename: './covid-world.html',
+      chunks: ['covid-world'],
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
