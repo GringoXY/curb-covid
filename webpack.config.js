@@ -73,6 +73,15 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.json$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[hash].[ext]',
+          },
+        },
+      },
     ],
   },
 
