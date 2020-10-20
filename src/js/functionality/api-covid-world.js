@@ -1,3 +1,4 @@
+var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 var url = 'https://corona.lmao.ninja/v2/countries';
 var data_from_all_world = new Array;
 var countries = new Array;
