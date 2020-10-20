@@ -32,6 +32,27 @@
           background-color: $yellow;
         }
       }
+
+      &__btn {
+        &:hover {
+          background-color: lighten($black, $amount: 10%);
+        }
+      }
+
+      &__hamburger {
+        background-color: $yellow;
+
+        &::before,
+        &::after {
+          background-color: $yellow;
+        }
+      }
+
+      &__list {
+        &--fill-window {
+          background-color: darken($black, $amount: 5%);
+        }
+      }
     }
   }
 
