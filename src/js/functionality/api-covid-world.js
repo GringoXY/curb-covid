@@ -27,6 +27,11 @@ fetch(url)
   }).catch(err => console.error(err));
 
 setTimeout(function () {
+  var map = document.querySelector("#map");
+  var loadingPage = document.querySelector(".loading");
+  map.style.display = "block";
+  loadingPage.style.display = "none";
+
   mapboxgl.accessToken = 'pk.eyJ1IjoicHJ6ZW1xcSIsImEiOiJja2dlNG1nbzExNzVjMndzNTFidGxmNWg0In0.IlnYOe9hGkPPMOfc4qv3zA';
   var map = new mapboxgl.Map({
     container: 'map',
