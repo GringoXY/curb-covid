@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
 
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -75,12 +75,8 @@ module.exports = {
       },
       {
         test: /\.json$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[hash].[ext]',
-          },
-        },
+        loader: 'file-loader',
+        type: 'javascript/auto',
       },
     ],
   },
