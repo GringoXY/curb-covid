@@ -1,0 +1,81 @@
+@import "./variables";
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf"), url("../assets/fonts/Poppins-Medium.ttf"),
+    url("../assets/fonts/Poppins-SemiBold.ttf"), url("../assets/fonts/Poppins-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: $black;
+  color: $white;
+  font-size: calc(10px + 2vmin);
+  font-family: "Poppins", Tahoma, sans-serif;
+}
+
+@import "./layouts/header";
+.l-header {
+  background-color: lighten($black, $amount: 5%);
+  color: $white;
+
+  .c-logo {
+    &__link {
+      color: $white;
+    }
+  }
+
+  .c-settings {
+    &__btn {
+      color: $white;
+    }
+  }
+
+  .c-nav {
+    &__link {
+      color: $white;
+    }
+
+    &__btn {
+      &:hover {
+        background-color: lighten($black, $amount: 15%);
+      }
+    }
+
+    &__hamburger {
+      background-color: $white;
+
+      &::before,
+      &::after {
+        background-color: $white;
+      }
+    }
+
+    &__list {
+      &--fill-window {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+}
+@import "./layouts/main";
+.l-main {
+  flex-direction: column;
+}
+@import "./layouts/footer";
+.l-footer {
+  background-color: lighten($black, $amount: 5%);
+}
