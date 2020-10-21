@@ -164,6 +164,39 @@
         }
       }
     }
+
+    .c-hero {
+      &__link {
+        background-color: $yellow;
+        color: $black;
+
+        &::before {
+          background-color: darken($yellow, $amount: 30%);
+        }
+      }
+    }
+
+    .c-about {
+      &__quote {
+        &::before {
+          background-color: $yellow;
+        }
+      }
+
+      &__link {
+        color: $yellow;
+
+        &:hover {
+          color: darken($yellow, $amount: 30%);
+        }
+      }
+
+      &__heading {
+        &--orange {
+          color: $yellow;
+        }
+      }
+    }
   }
 
   .l-article {
