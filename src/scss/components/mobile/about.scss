@@ -1,0 +1,39 @@
+@media (max-width: 1376px) {
+  .c-about {
+    &__overrall {
+      width: 50vw;
+    }
+
+    &__creator {
+      width: 70vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .c-about {
+    &__overrall,
+    &__creator {
+      width: 90vw;
+      height: auto;
+    }
+
+    &__creator {
+      flex-direction: column;
+    }
+
+    &__text {
+      &:nth-child(n + 1) {
+        margin: 0;
+      }
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__svg {
+      width: 1.1em;
+    }
+  }
+}
