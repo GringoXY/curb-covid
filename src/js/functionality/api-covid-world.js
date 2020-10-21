@@ -1,12 +1,12 @@
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 var url = 'https://corona.lmao.ninja/v2/countries';
-var data_from_all_world = new Array;
-var countries = new Array;
-var cases = new Array;
-var deaths = new Array;
-var today_cases = new Array;
-var latitude = new Array;
-var longitude = new Array;
+var data_from_all_world = new Array();
+var countries = new Array();
+var cases = new Array();
+var deaths = new Array();
+var today_cases = new Array();
+var latitude = new Array();
+var longitude = new Array();
 var fetched = false;
 var colors = ['red', 'green', 'blue', 'purple', 'yellow', 'pink', 'orange'];
 
