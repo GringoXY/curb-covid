@@ -261,38 +261,12 @@ fetch("https://api.apify.com/v2/datasets/L3VCmhMeX0KUQeJto/items?format=json&cle
     fetched_yet = true;
     document.querySelector(".loading").style.display = "none";
     document.querySelector("#main").style.display = "block";
+  }).catch(error => console.log('error', error));
 
-    const isClicked = sessionStorage.getItem("isClicked");
-
-    if (isClicked === "true") {
-      const footer = document.querySelector(".l-footer");
-      const element = footer.getBoundingClientRect();
-      const yPosition = element.top;
-
-      // scroll to voievodeship
-      setTimeout(() => {
-        window.scrollTo(0, yPosition);
-      }, 250);
-    }
-
-    sessionStorage.setItem("isClicked", "false");
-
-  })
-
-  .catch(error => console.log('error', error));
 var start_loop_wojewodztwo = false;
+
 const searchBtn = document.querySelector(".search-btn");
-const resetBtn = document.querySelector(".reset");
-
-resetBtn.addEventListener("click", () => {
-  sessionStorage.setItem("isClicked", "true");
-  window.location.reload();
-});
-
 searchBtn.addEventListener("click", () => {
-  const search = document.querySelector("#search");
-  search.style.display = "none";
-  resetBtn.style.display = "block";
   array_selected_wojewodztwo = new Array();
   infected_array_selected_wojewodztwo = new Array();
   deceased_array_selected_wojewodztwo = new Array();
@@ -359,17 +333,26 @@ searchBtn.addEventListener("click", () => {
     start_loop_wojewodztwo = true;
     for (var k = 21; k < full_array_wojewodztwa[0].length; k++) {
       for (var j = 0; j < 16; j++) {
-
         if (full_array_wojewodztwa[0][k].infectedByRegion[j].region == selected_wojewodztwo) {
           infected_array_selected_wojewodztwo.push(full_array_wojewodztwa[0][k].infectedByRegion[j].infectedCount);
           deceased_array_selected_wojewodztwo.push(full_array_wojewodztwa[0][k].infectedByRegion[j].deceasedCount);
           time_of_data_wojewodztwo.push(full_array_wojewodztwa[0][k].lastUpdatedAtApify.substring(0, 10));
-
         }
       }
     }
 
-    let myChart = document.getElementById('chart4').getContext('2d');
+    // remove old chart and append new one
+    const canvas = document.getElementById('chart4');
+    canvas.remove();
+
+    const newCanvas = document.createElement('canvas');
+    newCanvas.className = "c-charts__canvas c-charts__graph--column";
+    newCanvas.id = "chart4";
+
+    const chartWrapper = document.querySelector(".c-charts__voievodeship");
+    chartWrapper.appendChild(newCanvas);
+
+    let myChart = newCanvas.getContext('2d');
 
     Chart.defaults.global.defaultFontFamily = 'Lato';
     Chart.defaults.global.defaultFontSize = 18;
