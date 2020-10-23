@@ -1,8 +1,7 @@
 @import "../../variables";
 
 .c-search {
-  &__iframe,
-  &__btn--reset {
+  &__iframe {
     display: none;
   }
 
@@ -59,21 +58,6 @@
 
       &::before {
         background-color: darken($blue, $amount: 20%);
-      }
-    }
-
-    &--reset {
-      display: none;
-      margin: 0 auto;
-      background-color: $orange;
-      color: $white;
-
-      &:focus {
-        box-shadow: 0 0 0 0.2em $white, 0 0 0 0.4em darken($orange, $amount: 20%);
-      }
-
-      &::before {
-        background-color: darken($orange, $amount: 20%);
       }
     }
 
