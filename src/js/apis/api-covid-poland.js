@@ -19,18 +19,12 @@ if (date_for_two_weeks <= 0) {
 document.querySelector("#data").innerHTML = current_data;
 document.querySelector("#for_two_weeks").innerHTML = data_for_two_weeks;
 
-function gototab(reload) {
-  window.location.hash = '#search';
-  window.location.reload(true);
-}
-
 /// dane z ministestwa zdrowia
 url = "https://api.apify.com/v2/key-value-stores/3Po6TV7wTht4vIEid/records/LATEST?disableRedirect=true";
 fetch(url)
   .then(res => res.json())
   .then((out) => {
     api_corona.push(out);
-
 
     infected.push(api_corona[0].infected);
 
@@ -61,8 +55,6 @@ fetch("https://api.covid19api.com/country/poland/status/confirmed/live?from=" + 
   .then(result => {
     result;
     complex_api.push(JSON.parse(result));
-
-
 
     for (var i = 0; i < complex_api[0].length; i++) {
       days.push(complex_api[0][i].Date.substring(0, 10));
@@ -160,8 +152,6 @@ fetch("https://api.apify.com/v2/key-value-stores/3Po6TV7wTht4vIEid/records/LATES
       name_wojewodztwa.push(array_wojewodztwa[0].infectedByRegion[j].region);
     }
   }).catch(error => console.log('error', error));
-
-
 
 setTimeout(() => {
   let myChart = document.getElementById('chart3').getContext('2d');
