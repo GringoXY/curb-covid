@@ -18,8 +18,9 @@
       &__btn {
         color: $yellow;
 
+        &:hover,
         &:focus {
-          border: 0.1em dotted $yellow;
+          background-color: lighten($black, $amount: 20%);
         }
       }
     }

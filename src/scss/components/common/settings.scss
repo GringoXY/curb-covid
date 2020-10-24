@@ -8,9 +8,11 @@
     cursor: pointer;
     padding: 0.5em;
     font-size: 0.6em;
+    border-radius: 0.2em;
 
+    &:hover,
     &:focus {
-      border: 0.1em dotted $black;
+      background-color: darken($white, $amount: 10%);
     }
 
     &--font-increase {
